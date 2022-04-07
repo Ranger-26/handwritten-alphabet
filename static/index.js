@@ -11,8 +11,6 @@ const dummyCanvasctx = dummyCanvas.getContext('2d');
 
 let coord = {x:0 , y:0};
 
-let dict = {0:"a", 1:"b", 2:"c", 3:"d", 4:"e", 5:"f", 6:"g", 7:"h", };
-
 let paint = false;
 
 function getPosition(event){
