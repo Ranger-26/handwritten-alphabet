@@ -36,16 +36,13 @@ function sketch(event){
   getPosition(event);
   ctx.lineTo(coord.x , coord.y);
   ctx.stroke();
-}
-
-function ClearCanvas(){
-  console.log("calling..")
-  predictImage();
-}
-  
+}  
 const modelURL = 'http://127.0.0.1:5000/model';
   
-
+function ClearCanv()
+{
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
 
 function predictImage()
 {

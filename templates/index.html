@@ -8,8 +8,9 @@
   </head>
   <body>
     <canvas id="myCanvas" width="280" height="280" style="border:1px solid #000000;"></canvas>
-    <canvas id="dummyCanvas" width="280" height="280" style="border:1px solid #000000;"></canvas>
-    <button onclick="ClearCanvas();">Submit</button>
+    <canvas id="dummyCanvas" width="280" height="280" style="border:1px solid #000000;" hidden="hidden"></canvas>
+    <button onclick="predictImage();">Submit</button>
+    <button onclick="ClearCanv();">Clear</button>
     <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>
