@@ -56,6 +56,7 @@ function predictImage()
     string = string.replace("]","");
     string = string.replace("Tensor", "").trim();
     console.log("Digit: " + String.fromCharCode(97+parseInt(string)));
+    document.querySelector("#guess").innerText = "Guess:"+String.fromCharCode(65+parseInt(string))
   });
 }
 
